@@ -55,15 +55,25 @@ public class OneOfEachStats {
 				break;
 			}
 		}
-		 int check= Math.max(Math.max(twoKids, threeKids), fourOrMore);
+		  int check= Math.max(Math.max(twoKids, threeKids), fourOrMore);
 		 double avarage = (double) total / T;
-	     System.out.println("Avrage: " +avarage+ "children to get at least one of each gender.");
+		
+	     System.out.println("Avrage: " +avarage+ " children to get at least one of each gender.");
 		 System.out.println("Number of families with 2 children: "+ twoKids);
 		 System.out.println("Number of families with 3 children: " + threeKids);
 		 System.out.println("Number of families with 4 children: "+ fourOrMore);
-		 System.out.println("The most common number is " + check + ".");
 		 
-		
+		  if (check== twoKids) { 
+		 System.out.println("The most common number is 2.");
+		 } else if (check== threeKids) {
+			 System.out.println("The most common number is 3.");
+		 } else  {
+			 System.out.println("The most common number is 4 or more.");
+
+		 }
+		 
+		 
+	
 		
 		//// In the previous version of this program, you used a statement like:
 		//// double rnd = Math.random();
